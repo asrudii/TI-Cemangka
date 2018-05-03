@@ -1,9 +1,88 @@
-.clear {
-    clear: both;
+body {
+    margin: 0;
+    padding: 0;
 }
 
-.join-colom {
+/* Nav Bar */
+.head {
+    position: fixed;
+    padding-top: 20px;
+    padding-left: 100px;
+    z-index: 9;
+}
+.menu-icon {
+    position: fixed;
+    top:20px;
+    right: 100px;
+    width: 50px;
+    height: 44px;
+    padding: 4px 8px;
+    box-sizing: border-box;
+    cursor: pointer;
+    z-index: 11;
+}
+.menu-icon span {
+    width: 100%;
+    height: 4px;
+    display: block;
+    background: #444;
+    margin: 6px 0;
+    transition: .5s;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
     height: 100vh;
+    background: darkslategray;
+    transition: .5s;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    z-index: 10;
+}
+.sidebar.active {
+    left: 0;
+}
+.sidebar .menu {
+    margin: 0;
+    padding: 40px 0;
+}
+.sidebar .menu li {
+    margin: 20px;
+    list-style: none;
+    font-family: sans-serif;
+}
+.sidebar .menu li a {
+    display: block;
+    padding: 10px 0;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+}
+.menu-icon.active span {
+    background: #fff;
+    position: absolute;
+    width: calc(100% - 16px);
+    top: calc(50% - 8px);
+}
+.menu-icon.active span:nth-child(1) {
+    transform: rotate(45deg);
+    background: #fff;
+}
+.menu-icon.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    background: #fff;
+}
+.menu-icon.active span:nth-child(2) {
+    display: none;
+}
+
+/* Join US */
+.join-colom {
+    height: 80vh;
     font-weight: bold;
 }
 .join-box {
@@ -24,4 +103,95 @@
 }
 .join-kanan {
     float: left;
+}
+
+/* Member */
+.member-colom {
+    height: 80vh;
+    font-weight: bold;
+    overflow: hidden;
+}
+.member-box {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    overflow: hidden;
+    display: inline-block;
+}
+.member-slider {
+    width: 10000px;
+}
+.member-slide {
+    width: 1140px;
+    padding-left: 10px;
+    float: left;
+}
+.member-judul {
+    text-align: center;
+}
+.member-judul h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.member-list {  
+    margin: 10px;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+.member-foto-shadow {
+    position: absolute;
+    left: -1px;
+    bottom: -10px;
+    background: #bbb;
+    border: solid 2px #bbb;
+    float: left;
+    border-radius: 50%;
+    height: 130px;
+}
+.member-foto {
+    background: #555;
+    border: solid 2px #555;
+    float: left;
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+    padding: 0;
+}
+.member-foto img {
+    margin: 0;
+    float: left;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+}
+.member-nama {
+    padding: 10px;
+    padding-left: 30px;
+    float: left;
+}
+.member-choose {
+    margin-top: 50px;
+}
+.member-choose ul {
+    list-style: none;
+}
+.member-choose li {
+    margin-left: 15px;
+    height: 40px;
+    display: inline-block;
+}
+.member-choose li a{
+    font-size: 16px;
+    color: dimgray;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .5s;
+}
+.member-choose li a:hover{
+    color: darkslateblue;
+}
+
+
+.clear {
+    clear: both;
 }
