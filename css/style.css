@@ -2,12 +2,20 @@ body {
     margin: 0;
     padding: 0;
 }
+ul {
+    list-style: none;
+}
+li {
+    display: inline-block;
+}
 
 /* Nav Bar */
 .head {
     position: fixed;
     padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 100px;
+    background: #fff;
     z-index: 9;
 }
 .menu-icon {
@@ -42,19 +50,52 @@ body {
     box-sizing: border-box;
     z-index: 10;
 }
+.sidebar .panah-kiri {
+    margin-top: 2px;
+    margin-left: -20px;
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #fff;
+}
+.sidebar .panah-kanan {
+    margin-top: 2px;
+    margin-left: 10px;
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #fff;
+}
 .sidebar.active {
     left: 0;
 }
 .sidebar .menu {
-    margin: 0;
+    margin: 0 auto;
     padding: 40px 0;
+    text-align: center;
 }
 .sidebar .menu li {
     margin: 20px;
-    list-style: none;
+    display: inline;
     font-family: sans-serif;
 }
+.sidebar .menu li span {
+    transform: translate(0, -10px);
+    transition: .5s;
+    opacity: 0;
+}
+.sidebar .menu li a:hover > span {
+    opacity: 1;
+    transform: translate(0, 0);
+}
 .sidebar .menu li a {
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
     display: block;
     padding: 10px 0;
     text-transform: uppercase;
@@ -120,6 +161,7 @@ body {
 }
 .member-slider {
     width: 10000px;
+    padding-bottom: 10px;
 }
 .member-slide {
     width: 1140px;
@@ -173,22 +215,157 @@ body {
     margin-top: 50px;
 }
 .member-choose ul {
-    list-style: none;
+    border-top: solid 1px dimgray;
+    padding-top: 10px;
+    padding-right: 20px;
 }
 .member-choose li {
-    margin-left: 15px;
     height: 40px;
-    display: inline-block;
+    text-align: center; 
 }
 .member-choose li a{
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-size: 16px;
+    margin: 10px;
     color: dimgray;
     text-decoration: none;
     font-weight: bold;
     transition: .5s;
 }
-.member-choose li a:hover{
+.member-choose li a:hover {
     color: darkslateblue;
+}
+.member-choose li a:focus, .member-choose li:focus {
+    background: dimgray;
+    color: white;    
+}
+
+
+/* GALLERY */
+#gallery {
+    padding-top: 150px;
+    color: dimgray;
+}
+#gallery h2 {
+    font-weight: bold;
+    font-size: 18px;
+}
+.gallery-judul {
+    margin-top: 10px;
+    background: dimgray;
+    height: 3px;
+    width: 100%;
+}
+
+/* gallery-1 */
+.gallery-1 {
+
+}
+#gallery li{
+    border: 5px solid dimgray;
+}
+.kolom-1, .kolom-2, .kolom-3, .kolom-4 {
+    padding: 0;
+}
+.kolom-1 ul {
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+.kolom-1 li {
+    width: 200px;
+    height: 300px;
+    margin-right: 20px;
+}
+.kolom-2 li {
+    width: 800px;
+    height: 400px;
+    margin-right: 20px;
+}
+.kolom-2 ul {
+    margin-bottom: 50px;
+}
+.kolom-2 .kanan {
+    width: 270px;
+    height: 400px;
+    
+}
+.kolom-3 li {
+    width: 98%;
+    height: 400px;
+}
+.kolom-3 ul {
+    margin-bottom: 100px;
+}
+
+/* Gallery-2 */
+.gallery-2 {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.kolom-4 ul {
+
+}
+.kolom-4 li {
+    width: 580px;
+    height: 500px;
+    margin-right: 20px;
+}
+.kolom-4 .kanan {
+    width: 500px;
+    padding: 0;
+}
+.kolom-4 .kanan ul {
+    padding: 0;
+}
+.kolom-4 .kanan li {
+    margin-right: 0;
+    margin-left: 20px;
+    height: 235px;
+    width: 220px;
+}
+.kolom-4 .kanan .atas {
+    margin-top: 20px;
+}
+.bingkai-shadow {
+    box-shadow: 2px 2px 10px 10px #aaa;
+}
+
+
+/* Gallery 3 */
+.kolom-3 ul {
+}
+.kolom-3 li {
+    width: 250px;
+    height: 350px;
+    margin-right: 20px;
+}
+.gal-1 {
+    max-width: 150px;
+    max-height: 250px;
+}
+.gal-2 {
+    max-width: 200px;
+    max-height: 300px;    
+}
+.gal-3 {
+    max-width: 250px;
+    max-height: 350px;
+}
+
+
+.footer-atas {
+    background: #888;
+    height: 300px;
+}
+.footer-bawah {
+    background: #444;
+    color: #fff;
+    padding-top: 10px;
+    padding-right: 20px;
+    text-align: right;
 }
 
 
