@@ -20,5 +20,10 @@ $(document).ready(function(){
     $('.member-list-choose li:nth-child(4)').click(function(){
         $('#Photography').animate({'margin-left': '-3420px'}, 800);
     })
+
+  
             
 })
+
+
+
