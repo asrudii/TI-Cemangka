@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-  
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>About Us | Cikalong Jepret</title>
@@ -89,107 +94,54 @@
 
 
 
- <div class="container">
+ <body>
+<div class="container">
     <div class="row">
-        <div class="col-md-12">
-            <div id="testimonial-slider" class="owl-carousel">
-                <div class="testimonial">
-                    <div class="pic">
-                        <img src="img/img-1.jpg">
+        <div class="col-md-8 col-center m-auto">
+        
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Carousel indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>   
+                <!-- Wrapper for carousel items -->
+                <div class="carousel-inner">
+                    <div class="item carousel-item active">
+                        <div class="img-box"><img src="img/udi.jpg" alt=""></div>
+                        <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
+                        <p class="overview"><b>Paula Wilson</b>, Media Analyst</p>
                     </div>
-                    <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada vulputate nisi in fermentum. Vivamus ac libero quis nisi auctor pulvinar. Aenean sit amet lectus posuere, mattis massa eget, ullamcorper diam. Nunc sit amet felis eget arcu congue dictum.
-                    </p>
-                    <h3 class="title">WILLIAMSON</h3>
-                    <small class="post">- Web Developer</small>
-                </div>
-                <div class="testimonial">
-                    <div class="pic">
-                        <img src="images/img-2.jpg">
+                    <div class="item carousel-item">
+                        <div class="img-box"><img src="img/udi.jpg" alt=""></div>
+                        <p class="testimonial">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Utmtc tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
+                        <p class="overview"><b>Antonio Moreno</b>, Web Developer</p>
                     </div>
-                    <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada vulputate nisi in fermentum. Vivamus ac libero quis nisi auctor pulvinar. Aenean sit amet lectus posuere, mattis massa eget, ullamcorper diam. Nunc sit amet felis eget arcu congue dictum.
-                    </p>
-                    <h3 class="title">kristina</h3>
-                    <small class="post">- Web Designer</small>
+                    <div class="item carousel-item">
+                        <div class="img-box"><img src="img/udi.jpg" alt=""></div>
+                        <p class="testimonial">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.</p>
+                        <p class="overview"><b>Michael Holz</b>, Seo Analyst</p>
+                    </div>
                 </div>
+                <!-- Carousel controls -->
+                <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+                    <i class="fa fa-angle-right"></i>
+                </a>
             </div>
         </div>
-    </div>
+    </div>      
 </div>
-    
-            </section>
-
-   <!-- Write your comments here  <section>
-        <div class="container join-colom">
-            <div class="row justify-content-md-center">
-                <div class="col-10 join-box">
-                    <div class="row">
-                        <div class="col text-center join-judul">
-                            <h3>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aliquid ratione nulla magnam corporis soluta, voluptatem sint sunt architecto labore quia hic quidem suscipit error ea at molestiae autem vitae."</h3>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <form>
-                                <div class="col-4 join-kiri">
-                                    <div class="form-group row">
-                                        <label for="inputFistName" class="col-sm-2 col-form-label">Nama</label>
-                                        <div class="col">
-                                            <input type="text" class="form-control" placeholder="Nama">
-                                        </div>  
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="inputEmail4" class="col-sm-2 col-form-label">Email</label>
-                                        <div class="col">
-                                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="inputAddress" class="col-sm-2 col-form-label">Alamat</label>
-                                        <div class="col">
-                                            <input type="text" class="form-control" id="inputAddress" placeholder="Alamat">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="inputState" class="col-sm-2 col-form-label">Posisi</label>
-                                        <div class="col">
-                                            <select id="inputState" class="form-control">
-                                                <option selected>Pilih posisi...</option>
-                                                <option>Photography</option>
-                                                <option>Videography</option>
-                                                <option>Designer</option>
-                                                <option>Modeling</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-8 join-kanan">
-                                    <div class="form-group">
-                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="7" placeholder="tulis mengapa anda ingin bergabung"></textarea>
-                                    </div>
-                                </div>
-                                <div class="clear"></div>
-                                <div class="col text-right">
-                                    <button type="submit" class="btn btn-secondary">Join Us</button>
-                                </div>
-                                
-                                
-                            </form>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-    </section>-->
-
+           </section>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
   </body>
 </html>
